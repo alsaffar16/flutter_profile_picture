@@ -1,5 +1,6 @@
 library flutter_profile_picture;
 
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'extends/colors/constant.dart';
 import 'extends/input_text.dart';

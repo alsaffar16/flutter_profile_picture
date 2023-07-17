@@ -49,7 +49,12 @@ class WithImage extends StatelessWidget {
     return CircleAvatar(
       radius: radius,
       // use background image
-      backgroundImage: NetworkImage(img),
+      backgroundImage: CachedNetworkImageProvider(
+        img,
+        errorListener: () {
+          const Icon(Icons.broken_image);
+        },
+      ),
       // set background color transparent
       backgroundColor: Colors.transparent,
     );

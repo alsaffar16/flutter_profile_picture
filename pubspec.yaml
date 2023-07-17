@@ -1,15 +1,15 @@
 name: flutter_profile_picture
 description: Automatically generate profile picture with random first name and background color. But you can still provide pictures if you have them. As the default color, based on the name of the first letter.
 version: 2.0.0
-homepage: "https://github.com/adityadees/flutter_profile_picture"
+homepage: 'https://github.com/adityadees/flutter_profile_picture'
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
-  flutter: ">=1.17.0"
+  sdk: '>=2.18.2 <3.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
+  cached_network_image: ^3.2.3
 
 dev_dependencies:
   flutter_test:
