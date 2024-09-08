@@ -51,7 +51,7 @@ class WithImage extends StatelessWidget {
       // use background image
       backgroundImage: CachedNetworkImageProvider(
         img,
-        errorListener: () {
+        errorListener: (_) {
           const Icon(Icons.broken_image);
         },
       ),
